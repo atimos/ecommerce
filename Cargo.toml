@@ -1,0 +1,23 @@
+[package]
+name = "ecommerce"
+version = "0.1.0"
+authors = ["Timo <dev@timot.se>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+uuid = { version = "0.8.2", features = ["serde", "v4"] }
+tokio = { version = "0.2", features = ["full"] }
+warp = "0.2"
+rust_decimal = { version = "1.9.0", features = ["serde-arbitrary-precision", "serde-float", "serde-str"] }
+serde = { version = "1.0.119", features = ["derive"] }
+serde_json = { version = "1.0.61", features = ["preserve_order", "arbitrary_precision", "float_roundtrip"] }
+ron = "0.6.4"
+chrono = { version = "0.4.19", features = ["serde"] }
+clap = "3.0.0-beta.2"
+indexmap = { version = "1.6.1", features = ["serde"] }
+itertools = "0.10.0"
+thiserror = "1.0.23"
+displaydoc = "0.1.7"
+boolinator = "2.4.0"

@@ -1,0 +1,12 @@
+#![enable(implicit_some)]
+
+Section({
+    "portal": Section({
+        "id": One(optional: true, kind: String, value: String("123")),
+        // "secret": Secret(),
+        // "password": Secret(optional: false),
+        // "test": Bool(value: true),
+    }),
+    "visual": Section({
+    }),
+})
